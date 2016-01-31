@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'demo';
+  src: url('http://at.alicdn.com/t/font_1453195338_4838202.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1453195338_4838202.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1453195338_4838202.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1453195338_4838202.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1453195338_4838202.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@name1:zhixian;
+@name2:juxing;
+@name3:yuan;
+@name4:wujiao;
+@name5:qianbi;
+@name6:secaiban;
+@name7:tian;
+@name8:beijing1;
+@name9:xiantiao;
+@name10:xiantiao1;
+@name11:xiantiao2;
+@name12:xiangpi;
+@name13:gongju;
+@name14:jiequ;
+
+@con1:e602;
+@con2:e60c;
+@con3:e609;
+@con4:e606;
+@con5:e601;
+@con6:e600;
+@con7:e607;
+@con8:e603;
+@con9:e604;
+@con10:e60a;
+@con11:e60b;
+@con12:e605;
+@con13:e60d;
+@con14:e60e;
+
+.for(@i:1) when (@i<=100){
+    @n:'name@{i}';
+    @n1:@@n;
+    @c:'con@{i}';
+    @c1:@@c;
+   *[data-a=@{n1}]:before{
+     font-family: demo;
+     content: "\@{c1}";
+   }
+  *[data-a=@{n1}][icon-pos=top]:before{
+    display:block;
+    font-family: demo;
+    content: "\@{c1}";
+    text-align: center;
+  }
+
+  *[data-a=@{n1}][icon-pos=right]:before {
+    font-family: demo;
+    content: "";
+  }
+  *[data-a=@{n1}][icon-pos=right]:after{
+    font-family: demo;
+    content: "\@{c1}";
+  }
+
+
+  *[data-a=@{n1}][icon-pos=bottom]:before {
+    font-family: demo;
+    content: "";
+  }
+  *[data-a=@{n1}][icon-pos=bottom]:after{
+    font-family: demo;
+    content: "\@{c1}";
+    display: block;
+  }
+  .for(@i+1);
+}
+
+.for();
+
+

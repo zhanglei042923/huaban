@@ -1,0 +1,161 @@
+ul,li,body,input{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration:none;
+}
+html{
+    background:url("../1.jpg");
+    background-size:cover;
+}
+.header{
+    width:800px ;
+    height: 30px;
+    margin: 0 auto;
+    background:linear-gradient(40deg,#D1A112,#916524);
+}
+.header div{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color:#795548;
+    font-weight: bold;
+}
+.container{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.meun{
+    width: 100%;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    background:#CA9C5B;
+    position: relative;
+    z-index: 2;
+}
+.meun .parent{
+    width: 13.5%;
+    height: 100%;
+    float: left;
+}
+.tuxing{
+    width: 40px;
+    height: 300px;
+    background:#CA9C5B ;
+    position: absolute;
+    top:100px;
+    left:20px;
+    z-index: 2;
+    animation: bounceInDown 2s ease forwards;
+}
+.meun .parent div{
+    width: 100%;
+    height: 100%;
+}
+.tuxing div{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.sp{
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+.sp li{
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    margin-top: 10px;
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    transition:all 2s ease;
+}
+.sp li:hover{
+    color:yellow;
+    background:#d58512 ;
+}
+.meun .parent .son{
+    width: 100%;
+}
+.box{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.box .copy{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.box canvas{
+    position: absolute;
+    top:0;
+    left: 0;
+    background:#E1C282;
+
+}
+.son{
+    display: none;background: #aaa;
+}
+.son li{
+    background: #f0ad4e;
+    transition:all 2s ease;
+    font-size: 25px;
+
+}
+.son li:hover{
+    background: #d58512;
+    color:white;
+}
+.xpsize li:nth-child(1){
+    font-size: 12px;
+}
+.xpsize li:nth-child(2){
+    font-size: 18px;
+}
+.xpsize li:nth-child(3){
+    font-size: 32px;
+}
+.xp{
+    width: 10px;
+    height: 10px;
+    border:1px solid black;
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+}
+input{
+    width: 18px;
+    height: 18px;
+}
+.linecolor div{
+    font-size: 20px;
+    color:white;
+}
+.cc{
+
+}
+.file li{
+    font-size: 14px;
+}
+.selectarea{
+    border:1px dotted #000;
+    position: absolute;
+    left:0;top:0;
+    display:none;
+}
